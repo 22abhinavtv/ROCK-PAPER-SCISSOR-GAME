@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper,Scissor</title>
+    <link rel="stylesheet" href="./RPS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!------------------------heading div start----------------------------->
+    <div class="rps-div">
+        <h2 class="rps-heading" style="padding-top: 2%;">ROCK</h2>
+        <h2 class="rps-heading">PAPER</h2>
+        <h2 class="rps-heading" style="padding-bottom: 2%;">SCISSOR</h2>
+        <div class="human-score" style="">
+        </div>
+    </div>
+    <!------------------------heading div end------------------------------->
+    <!-------------------R P S images start--------------------------------->
+    <div class="RPSimageDiv" id="RPSimageDiv">
+        <div class="outer" id="outer-1">
+            <div class="inner" id="inner-1" onclick="years()">
+                <img src="./rock.jfif" alt="" class="RPSimages" id="rock" onclick="RPSgame(this)"> 
+            </div>
+        </div>
+        <div class="outer" id="outer-2">
+            <div class="inner" id="inner-2" onclick="months()">
+                <img src="./paper.jfif" alt=""  class="RPSimages" id="paper" onclick="RPSgame(this)" style="text-align: center;">
+            </div>
+        </div>
+        <div class="outer" id="outer-3">
+            <div class="inner" id="inner-3" onclick="days()">
+                <img src="./scissor.png" alt=""  class="RPSimages" id="scissor" onclick="RPSgame(this)">
+            </div>
+        </div>
+    </div>
+    <!-- <button onclick="RPSgame()">next</button> -->
+    <!-------------------R P S images end------------------------------------>
+
+    <script src="./RPS.js"></script>
+</body>
+</html>
